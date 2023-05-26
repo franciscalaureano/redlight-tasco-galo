@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+}
+
+body {
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+/*-----------------FONT-----------------*/
+
+@font-face {
+  font-family: ClashDisplay-Regular;
+  src: url("../fonts/ClashDisplay-Regular.otf");
+}
+
+h1 {
+  font-family: ClashDisplay-Regular;
+  font-size: 4rem;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: ff-dagny-web-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 40px;
+}
+
+h2 {
+  font-family: ClashDisplay-Regular;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.phone-navigation {
+  display: none;
+}
+
+/*-----------------Header-----------------*/
+
+header {
+  position: fixed;
+  width: 100vw;
+  background-color: var(--white);
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 0;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 4vw;
+  margin-right: 2vw;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+header a {
+  font-family: ClashDisplay-Regular;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: inherit;
+  transition-duration: 0.8s;
+}
+
+header a:hover {
+  color: var(--main-color);
+}
+
+.logo {
+  margin-left: 2vw;
+}
+
+#reserve_link {
+  color: var(--white);
+  background-color: var(--main-color);
+  border-radius: 5px;
+  padding: 1vh 1.25vw;
+}
+
+#reserve_link:hover {
+  background-color: var(--secondary-color);
+}
+
+/*-----------------Footer-----------------*/
+footer {
+  height: 10vh;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  margin-left: 3vw;
+  font-family: ClashDisplay-Regular;
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-right: 3vw;
+}
+
+#footer-logo {
+  text-decoration: none;
+}
+
+@media only screen and (max-device-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 35px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  footer a {
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    font-size: 0.5rem;
+  }
+
+  .phone-navigation {
+    position: fixed;
+    height: 98vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #phone-navitaion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    row-gap: 2vh;
+    margin-right: 2vw;
+  }
+}

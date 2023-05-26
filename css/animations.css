@@ -1,0 +1,44 @@
+#galo-img {
+  width: 6vw;
+  height: auto;
+}
+
+#glass-img {
+  transform: rotate(-5deg);
+  width: 11vw;
+  height: auto;
+}
+
+#hero-animation {
+  width: 25vw;
+  height: auto;
+}
+
+#reserve-img {
+  margin-left: 4vw;
+  width: 6vw;
+  height: auto;
+}
+
+#crew-img {
+  transform: rotate(15deg);
+  width: 7vw;
+  height: auto;
+  margin-left: 3vw;
+  position: relative;
+  bottom: 10vh;
+}
+
+@media only screen and (max-device-width: 900px) {
+  #hero-animation {
+    width: 65vw;
+    height: auto;
+  }
+
+  #galo-img,
+  #glass-img,
+  #crew-img,
+  #reserve-img {
+    display: none;
+  }
+}
